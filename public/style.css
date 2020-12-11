@@ -14,7 +14,7 @@ body{
 }
 
 .header{
-    background-color: aqua;
+    background-color: rgb(163, 241, 241);
     height: auto;
     
 }
@@ -74,7 +74,7 @@ body{
 
 .section-1{
     height: 500px;
-    background-color: rebeccapurple;
+    background-color: rgb(109, 51, 163);
 
 }
 
@@ -139,7 +139,7 @@ body{
 }
 .news{
     width: 100%;
-    background-color: cadetblue;
+    background-color: rgb(247, 214, 241);
     height: 240px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -227,11 +227,21 @@ hr{
 }
 .fa-facebook-square{
     float: right;
-    padding:3.5% 0;
+    padding:3.5% ;
 
 }
 .fa-instagram{
     float: right;
-    padding:3.5% ;
+    padding:3.5% 0;
 
 }
+
+.Pie-de-pagina{
+    font-size: 12px;
+    float: left;
+    color: rgb(114, 113, 113);
+ 
+}
+
+
+
