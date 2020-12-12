@@ -90,7 +90,7 @@ body{
 }
 
 .footer {
-    height: 200px;
+    height: 240px;
     background-color: rgb(176, 223, 250);
     bottom: 0px;
  
@@ -238,7 +238,7 @@ hr{
 }
 
 .Pie-de-pagina{
-    font-size: 1px;
+    font-size: 13px;
     float: left;
     color: rgb(114, 113, 113);
  
