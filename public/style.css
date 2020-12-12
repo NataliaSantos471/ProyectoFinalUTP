@@ -41,8 +41,9 @@ body{
 }
 
 .container-imagen{
-    background-image: url('./bg.png');
-    height: 240px;
+    background-image: url("images/banner.png");
+    height: 200px;
+    
     /* margin-bottom: 20px; */
 }
 
@@ -237,7 +238,7 @@ hr{
 }
 
 .Pie-de-pagina{
-    font-size: 12px;
+    font-size: 1px;
     float: left;
     color: rgb(114, 113, 113);
  
