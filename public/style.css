@@ -25,7 +25,7 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 1200px;
     position: fixed;
 
 }
@@ -53,7 +53,7 @@ body{
     padding: 0.25em 0;
     list-style-type: none;
     text-align: end;
-    width: 100%
+    width: 1200px;
 }
 
 .nav-element{
@@ -77,7 +77,7 @@ body{
 }
 
 .section-2{
-    height: 500px;
+    height: 510px;
     background-color: gainsboro;
 }
 
@@ -150,7 +150,7 @@ body{
 }
 
 .news-data{
-    width: 49%;
+    width: 50%;
     height: 100%;
     background-color: rebeccapurple;
     display: -webkit-inline-box;
@@ -175,6 +175,11 @@ body{
     text-align: right;
 }
 
+.new-image{
+    padding: 0.25em 0;
+    width: 210px;
+    height: 210px;
+}
 
 .fa-ambulance.news-logo{
     padding: 0.25em 0;
@@ -182,8 +187,8 @@ body{
 
 
 .news-url{
-    font-size: 10px;
-    float: right;
+    font-size: 20px;
+    float: left;
 }
 
 .news-url > a{
