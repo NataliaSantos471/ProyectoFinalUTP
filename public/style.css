@@ -150,7 +150,7 @@ body{
 }
 
 .news-data{
-    width: 49%;
+    width: 50%;
     height: 100%;
     background-color: rebeccapurple;
     display: -webkit-inline-box;
@@ -175,6 +175,12 @@ body{
     text-align: right;
 }
 
+.new-image{
+    padding: 0.25em 0;
+    width: 210px;
+    height: 210px;
+    
+}
 
 .fa-ambulance.news-logo{
     padding: 0.25em 0;
@@ -182,8 +188,8 @@ body{
 
 
 .news-url{
-    font-size: 10px;
-    float: right;
+    font-size: 20px;
+    float: left;
 }
 
 .news-url > a{

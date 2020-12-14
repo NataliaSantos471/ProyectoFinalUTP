@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://newsapi.org/s/colombia-news-api key=cb23f30ed9eb40708c818ed776e3508c"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetShop</title>  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    
 </head>
 
 <body>
     <div class="container">
-        
+
         <section id="inicio">
         <div class="header">
             <div class="container-menu">
@@ -112,81 +113,25 @@
         </section>
 
         <section id="noticias">
+
+
+
             <div class="section-2">
                 <p class="section-text">Section 2</p>
                 <div class="section-news">
 
-                    <div class="news">
-                        <div class="news-data">
-                            <div class="news-image">
-                                <em class="fas fa-ambulance news-logo" style="font-size:150px"></em>
-                            </div>
-                            <div class="news-text">
-                                <h2 class="news-title">Noticia 1</h2>
-                                <hr>
-                                <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing
-                                    elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt
-                                    excepturi
-                                    quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                                <span class="news-url"><a href="#">Leer noticia completa >></a></span>
-                            </div>
-                        </div>
-                        <div class="news-data">
-                            <div class="news-image">
-                                <em class="fas fa-ambulance news-logo" style="font-size:150px"></em>
-                            </div>
-                            <div class="news-text">
-                                <h2 class="news-title">Noticia 2</h2>
-                                <hr>
-                                <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing
-                                    elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt
-                                    excepturi
-                                    quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                                <span class="news-url"><a href="#">Leer noticia completa >></a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="news-data">
+                    <template v-for="item in info">
 
-                            <div class="news-image">
-                                <em class="fas fa-ambulance news-logo" style="font-size:150px"></em>
-                            </div>
-                            <div class="news-text">
-                                <h2 class="news-title">Noticia 1</h2>
-                                <hr>
-                                <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing
-                                    elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt
-                                    excepturi
-                                    quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                                <span class="news-url"><a href="#">Leer noticia completa >></a></span>
-                            </div>
-                        </div>
                         <div class="news-data">
-
                             <div class="news-image">
-                                <em class="fas fa-ambulance news-logo" style="font-size:150px"></em>
+                                <img :src= "'https://www.dailymotion.com/thumbnail/video/'+item.id" alt="" class="new-image">  
                             </div>
                             <div class="news-text">
-                                <h2 class="news-title">Noticia 1</h2>
-                                <hr>
-                                <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing
-                                    elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt
-                                    excepturi
-                                    quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                                <span class="news-url"><a href="#">Leer noticia completa >></a></span>
+                                <h2 class="news-title"> {{ item.title }} </h2>                               
+                                <span class="news-url"><a v-bind:href="'https://www.dailymotion.com/video/'+item.id" target="_blank">Reproducir video>></a></span>
                             </div>
                         </div>
-
-                    </div>
+                    </template>
                 </div>
 
             </div>
